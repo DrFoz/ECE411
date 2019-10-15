@@ -1,0 +1,2 @@
+10-15-2019 TF-Estimated physical design specifications and decided to start layout to fit inside a 7 cm diameter encloser with 3 cm depth. Current battery occupies the most space, final design should have a lower profile battery. Link below to possible cell.
+https://www.alliedelec.com/product/adafruit-industries/328/70928240/?gclid=Cj0KCQjw3JXtBRC8ARIsAEBHg4m2AMUNfEqNaa3WGbbPmNbxZgt_nQx-7cDTjXKrOLfFDLpHlv64AUcaAs2hEALw_wcB&gclsrc=aw.ds

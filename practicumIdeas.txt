@@ -1,0 +1,15 @@
+Practicum project concepts
+
+1. Self driving doorstop
+
+	This design would would use infrared line tracking sensors, and user placed paths to guide a wheeled doorstop to the optimum location for door stoppage. The operation can be activated using an IR remote, or be set to auto-mode where it will secure the nearest door it can find. The actuator for the wheels will be done using a stepper motor to prevent slippage when the doorstop is in the resting state. An Atmega328P will be used with the addition of a A4988 stepper motor driver.
+
+
+2. Battery Voltage tester
+
+	This project would use a voltage sensor to test 1.5V and 9V batteries. Sensor readings would be processed using an Atmega328P microprocessor and the output(actuator) would be an oled display with the raw voltage reading and 8 led strip that would act as a bad/good gauge feedback to the user.
+
+
+3.Haptic feedback compass
+
+	This project will use a digital magnometer and an Atmega328P microprocessor to determine the direction the device is oriented. It will be worn by the user on a lanyard around there neck. Mode Select and Direction select will be set with the use of a momentary switch mounted to the case. Feedback will be generated using micro dc vibrator motor, to indicate mode and direction selected, as well as to indicate a deviation from desired direction. During operation Haptic feedback intensity will be preportional to the deviation of desired direction of travel. This can be used to assist an individual with landbased navigation. Applications could include hiking, hunting, or as additional aid for the visually impaired. 

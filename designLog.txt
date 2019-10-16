@@ -2,3 +2,5 @@
 https://www.alliedelec.com/product/adafruit-industries/328/70928240/?gclid=Cj0KCQjw3JXtBRC8ARIsAEBHg4m2AMUNfEqNaa3WGbbPmNbxZgt_nQx-7cDTjXKrOLfFDLpHlv64AUcaAs2hEALw_wcB&gclsrc=aw.ds
 
 10-15-2019 TF-Mounted components to breadboard, built basic 5v regulated powersupply using LM7805, final design will utilize 3.3v regulator due to battery voltage contraints.
+
+10-15-2019 TF-Finished wiring of breadboard, added 16MHz quartz osillator, and connection points for FTDI adapter. Attempted to upload blink sketch but was unsucessful, possible due to not have recommended capacitor type/value for osillator circuit.

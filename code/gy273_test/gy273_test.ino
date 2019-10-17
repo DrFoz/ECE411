@@ -3,7 +3,7 @@
 #define addr 0x1E //I2C Address for The HMC5883
 
 void setup(){
-  
+  pinMode(LED_BUILTIN, OUTPUT);
   Serial.begin(9600);
   Wire.begin();
   
@@ -44,6 +44,9 @@ void loop(){
   Serial.print("Z Value: ");
   Serial.println(z);
   Serial.println();
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(500);
+  digitalWrite(LED_BUILTIN, LOW);
   
   delay(500);
 }

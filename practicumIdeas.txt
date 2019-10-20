@@ -13,3 +13,5 @@ Practicum project concepts
 3.Haptic feedback compass
 
 	This project will use a digital magnometer and an Atmega328P microprocessor to determine the direction the device is oriented. It will be worn by the user on a lanyard around there neck. Mode Select and Direction select will be set with the use of a momentary switch mounted to the case. Feedback will be generated using micro dc vibrator motor, to indicate mode and direction selected, as well as to indicate a deviation from desired direction. During operation Haptic feedback intensity will be preportional to the deviation of desired direction of travel. This can be used to assist an individual with landbased navigation. Applications could include hiking, hunting, or as additional aid for the visually impaired. 
+	
+We have chosen to work on the Haptic feedback compass for our practicum project.

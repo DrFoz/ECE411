@@ -1,0 +1,47 @@
+#include libraries
+#define device address
+pin declaration assignments
+	LED pins
+	Motor pin
+	button pin
+
+void setup
+	pin mode assignments
+	Serial setup
+	Device configuration
+	Bus initialization for
+	Set output pins to initial state (LOW/HIGH/0)
+
+
+void loop
+	Create local variable for x,y,z values
+	Read values from sensor store to x,y,z
+	 
+	if(mode select = north)
+
+		if(-5 < x < 5)
+			motor pin off
+
+		if(-90 < x < -6)
+			motor pin on medium
+
+		if(-180 < x < -89)
+			motor pin on high
+
+	elseif(mode select = west)
+
+		if(-5 < x < 5)
+			motor pin medium
+
+		if(-85 < x < -95)
+			motor pin on off
+
+		if(-180 < x < -84)
+			motor pin on meduim
+
+	interrupt routine(on button press)
+		switch mode select to next clockwise direction
+		light corresponding LED
+		turn off previous LED
+		disable interrupts return to main loop	
+

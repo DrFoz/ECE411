@@ -1,3 +1,8 @@
+//
+//Only looking at x values for simplicity. Data read values assuming  -1 to -180 on left side of compass 1 - 180 on right side
+//
+
+
 #include libraries
 #define device address
 pin declaration assignments

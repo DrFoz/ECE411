@@ -6,7 +6,7 @@ int southLED = 6;
 int eastLED = 7;
 int westLED = 8;
 //boolean currentButton = LOW;
-//int modeSelect = 2;
+int modeSelect = 2;
 volatile byte directionSet = 0; //variable to inticate direction selected
 
 
@@ -19,10 +19,10 @@ void setup()
 {
   Serial.begin(9600);
 	Wire.begin();
-  //attachInterrupt(digitalPinToInterrupt(modeSelect), changeDirection, FALLING);
+  attachInterrupt(digitalPinToInterrupt(modeSelect), changeDirection, FALLING);
 	compass.init();
 	compass.setSamplingRate(50);
-  //pinMode(modeSelect, INPUT);
+  pinMode(modeSelect, INPUT);
   
   pinMode(motorPinLeft, OUTPUT);
   pinMode(motorPinRight, OUTPUT);

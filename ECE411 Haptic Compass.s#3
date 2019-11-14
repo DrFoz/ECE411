@@ -9238,6 +9238,7 @@ Inductive Load</text>
 <wire x1="66.04" y1="177.8" x2="71.12" y2="177.8" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <wire x1="88.9" y1="157.48" x2="88.9" y2="170.18" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
+<junction x="71.12" y="177.8"/>
 </segment>
 <segment>
 <pinref part="MAGNETOMETER" gate="G$1" pin="VCC"/>
@@ -9266,6 +9267,11 @@ Inductive Load</text>
 <wire x1="198.12" y1="20.32" x2="198.12" y2="27.94" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
 <junction x="198.12" y="20.32" grouprefs="VIBRATING-MOTOR"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<pinref part="JP2" gate="A" pin="2"/>
+<wire x1="127" y1="-55.88" x2="127" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BATT-SERIES" class="0">
@@ -9319,17 +9325,21 @@ Inductive Load</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="147.32" x2="40.64" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="40.64" y1="144.78" x2="58.42" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="40.64" y1="144.78" x2="48.26" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q2" gate="G$1" pin="B"/>
+<wire x1="48.26" y1="144.78" x2="58.42" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <wire x1="58.42" y1="144.78" x2="58.42" y2="147.32" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <junction x="58.42" y="144.78" grouprefs="POWER-5V-REGULATED"/>
-<pinref part="Q3" gate="G$1" pin="B"/>
-<wire x1="58.42" y1="167.64" x2="58.42" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<pinref part="Q4" gate="G$1" pin="B"/>
-<wire x1="58.42" y1="187.96" x2="58.42" y2="167.64" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="58.42" y="167.64" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q1" gate="G$1" pin="C"/>
 <wire x1="58.42" y1="139.7" x2="58.42" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<pinref part="Q4" gate="G$1" pin="B"/>
+<wire x1="48.26" y1="144.78" x2="48.26" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="167.64" x2="48.26" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="187.96" x2="58.42" y2="187.96" width="0.1524" layer="91"/>
+<junction x="48.26" y="144.78"/>
+<pinref part="Q3" gate="G$1" pin="B"/>
+<wire x1="48.26" y1="167.64" x2="58.42" y2="167.64" width="0.1524" layer="91"/>
+<junction x="48.26" y="167.64"/>
 </segment>
 </net>
 <net name="+V-SUPPLY" class="0">
@@ -9473,13 +9483,6 @@ Inductive Load</text>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="40.64" x2="2.54" y2="38.1" width="0.1524" layer="91" grouprefs="PROCESSING"/>
 <junction x="2.54" y="40.64" grouprefs="PROCESSING"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="JP2" gate="A" pin="2"/>
-<wire x1="127" y1="-66.04" x2="127" y2="-55.88" width="0.1524" layer="91" grouprefs="MAGNETOMETER-IO"/>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="RESET" class="0">

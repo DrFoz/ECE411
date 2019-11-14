@@ -334,75 +334,6 @@ uC used in the Arduino&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="hmc5883l">
-<packages>
-<package name="GY-271">
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-6.35" x2="-7.62" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-6.35" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
-<pad name="SCL" x="-6.35" y="0.635" drill="0.8" shape="long"/>
-<pad name="SDA" x="-6.35" y="-1.905" drill="0.8" shape="long"/>
-<pad name="DRDY" x="-6.35" y="-4.445" drill="0.8" shape="long"/>
-<pad name="GND" x="-6.35" y="3.175" drill="0.8" shape="long"/>
-<pad name="VCC" x="-6.35" y="5.715" drill="0.8" shape="long"/>
-<wire x1="1.27" y1="0" x2="5.08" y2="0" width="0.127" layer="21"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="4.445" y1="0.635" x2="5.08" y2="0" width="0.127" layer="21"/>
-<wire x1="5.08" y1="0" x2="4.445" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-3.81" x2="1.905" y2="-3.175" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-3.81" x2="0.635" y2="-3.175" width="0.127" layer="21"/>
-<text x="5.08" y="1.27" size="1.27" layer="21">X</text>
-<text x="2.54" y="-5.08" size="1.27" layer="21">Y</text>
-<text x="1.27" y="0" size="1.27" layer="21">Z</text>
-</package>
-</packages>
-<symbols>
-<symbol name="HMC5883L">
-<wire x1="17.78" y1="15.24" x2="-10.16" y2="15.24" width="0.6096" layer="94"/>
-<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.6096" layer="94"/>
-<wire x1="-10.16" y1="-15.24" x2="17.78" y2="-15.24" width="0.6096" layer="94"/>
-<wire x1="17.78" y1="-15.24" x2="17.78" y2="15.24" width="0.6096" layer="94"/>
-<wire x1="12.7" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="10.16" y1="0" x2="12.7" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="12.7" y1="-2.54" x2="10.16" y2="-5.08" width="0.6096" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="7.62" y2="-7.62" width="0.6096" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="2.54" y2="-7.62" width="0.6096" layer="94"/>
-<circle x="5.08" y="-2.54" radius="0.71841875" width="0.6096" layer="94"/>
-<text x="12.7" y="0" size="1.778" layer="94">X</text>
-<text x="7.62" y="-10.16" size="1.778" layer="94">Y</text>
-<text x="2.54" y="0" size="1.778" layer="94">Z</text>
-<pin name="VCC" x="-15.24" y="10.16" length="middle"/>
-<pin name="GND" x="-15.24" y="5.08" length="middle"/>
-<pin name="SCL" x="-15.24" y="0" length="middle"/>
-<pin name="SDA" x="-15.24" y="-5.08" length="middle"/>
-<pin name="DRDY" x="-15.24" y="-10.16" length="middle"/>
-<text x="0" y="10.16" size="1.778" layer="94">3.3V</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="HMC5883L" prefix="U">
-<gates>
-<gate name="G$1" symbol="HMC5883L" x="-2.54" y="2.54"/>
-</gates>
-<devices>
-<device name="GY-271" package="GY-271">
-<connects>
-<connect gate="G$1" pin="DRDY" pad="DRDY"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="SCL" pad="SCL"/>
-<connect gate="G$1" pin="SDA" pad="SDA"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -11057,7 +10988,6 @@ Source: www.kingbright.com</description>
 </classes>
 <groups>
 <schematic_group name="POWER-5V-REGULATED"/>
-<schematic_group name="MAGNETIC-SENSING"/>
 <schematic_group name="PROGRAMMING-IO"/>
 <schematic_group name="MAGNETOMETER-IO"/>
 <schematic_group name="VIBRATING-MOTOR"/>
@@ -11067,7 +10997,6 @@ Source: www.kingbright.com</description>
 </groups>
 <parts>
 <part name="U1" library="SparkFun-IC-Microcontroller" library_urn="urn:adsk.eagle:library:525" deviceset="ATMEGA328P_PDIP" device="" package3d_urn="urn:adsk.eagle:package:38942/1" value="328P"/>
-<part name="MAGNETOMETER" library="hmc5883l" deviceset="HMC5883L" device="GY-271"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100K"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="220pF"/>
 <part name="Q1" library="SamacSys_Parts" deviceset="PBHV8115TLHR" device=""/>
@@ -11084,9 +11013,7 @@ Source: www.kingbright.com</description>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="Y1" library="SamacSys_Parts" deviceset="ECS-160-8-30Q-VY-TR" device=""/>
@@ -11158,7 +11085,6 @@ Limit of 3.5mA each.</text>
 <attribute name="NAME" x="43.18" y="74.422" size="1.778" layer="95"/>
 <attribute name="VALUE" x="43.18" y="7.62" size="1.778" layer="96"/>
 </instance>
-<instance part="MAGNETOMETER" gate="G$1" x="149.86" y="101.6" smashed="yes" grouprefs="MAGNETIC-SENSING"/>
 <instance part="R1" gate="G$1" x="30.48" y="144.78" smashed="yes" rot="R270" grouprefs="POWER-5V-REGULATED">
 <attribute name="NAME" x="26.67" y="146.2786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="21.59" y="141.478" size="1.778" layer="96"/>
@@ -11220,14 +11146,8 @@ Limit of 3.5mA each.</text>
 <instance part="GND2" gate="1" x="17.78" y="22.86" smashed="yes" grouprefs="PROCESSING">
 <attribute name="VALUE" x="15.24" y="20.32" size="1.778" layer="96"/>
 </instance>
-<instance part="GND3" gate="1" x="127" y="104.14" smashed="yes" grouprefs="MAGNETIC-SENSING">
-<attribute name="VALUE" x="124.46" y="101.6" size="1.778" layer="96"/>
-</instance>
 <instance part="P+2" gate="VCC" x="30.48" y="68.58" smashed="yes" grouprefs="PROCESSING">
 <attribute name="VALUE" x="27.94" y="68.58" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="P+3" gate="VCC" x="127" y="119.38" smashed="yes" grouprefs="MAGNETIC-SENSING">
-<attribute name="VALUE" x="124.46" y="116.84" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C2" gate="G$1" x="33.02" y="35.56" smashed="yes" grouprefs="PROCESSING">
 <attribute name="NAME" x="26.416" y="36.195" size="1.778" layer="95"/>
@@ -11388,12 +11308,6 @@ Limit of 3.5mA each.</text>
 <junction x="71.12" y="177.8"/>
 </segment>
 <segment>
-<pinref part="MAGNETOMETER" gate="G$1" pin="VCC"/>
-<wire x1="134.62" y1="111.76" x2="127" y2="111.76" width="0.1524" layer="91" grouprefs="MAGNETIC-SENSING"/>
-<wire x1="127" y1="111.76" x2="127" y2="116.84" width="0.1524" layer="91" grouprefs="MAGNETIC-SENSING"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="30.48" y1="66.04" x2="30.48" y2="63.5" width="0.1524" layer="91" grouprefs="PROCESSING"/>
 <pinref part="U1" gate="G$1" pin="VCC"/>
@@ -11549,11 +11463,6 @@ Limit of 3.5mA each.</text>
 <wire x1="-2.54" y1="127" x2="2.54" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MAGNETOMETER" gate="G$1" pin="GND"/>
-<wire x1="134.62" y1="106.68" x2="127" y2="106.68" width="0.1524" layer="91" grouprefs="MAGNETIC-SENSING"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="30.48" x2="33.02" y2="27.94" width="0.1524" layer="91" grouprefs="PROCESSING"/>
 <wire x1="33.02" y1="27.94" x2="17.78" y2="27.94" width="0.1524" layer="91" grouprefs="PROCESSING"/>
@@ -11602,26 +11511,18 @@ Limit of 3.5mA each.</text>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="MAGNETOMETER" gate="G$1" pin="SDA"/>
-<wire x1="134.62" y1="96.52" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="96.52" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PC4(ADC4/SDA)"/>
 <label x="101.6" y="60.96" size="1.778" layer="95"/>
 <wire x1="121.92" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
-<junction x="121.92" y="60.96"/>
 <wire x1="121.92" y1="-25.4" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="MAGNETOMETER" gate="G$1" pin="SCL"/>
-<wire x1="134.62" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="101.6" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PC5(ADC5/SCL)"/>
 <label x="101.6" y="55.88" size="1.778" layer="95"/>
 <wire x1="132.08" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
-<junction x="132.08" y="58.42"/>
 <wire x1="132.08" y1="-25.4" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
@@ -11630,11 +11531,7 @@ Limit of 3.5mA each.</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="PD2(INT0)"/>
 <wire x1="86.36" y1="43.18" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="43.18" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="MAGNETOMETER" gate="G$1" pin="DRDY"/>
-<wire x1="111.76" y1="91.44" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
 <label x="101.6" y="43.18" size="1.778" layer="95"/>
-<junction x="111.76" y="43.18"/>
 <wire x1="111.76" y1="-25.4" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>

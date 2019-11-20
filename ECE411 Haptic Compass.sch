@@ -11050,17 +11050,17 @@ Source: www.kingbright.com</description>
 <part name="LED-W" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1500"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF"/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="7.62" y="33.02" size="1.778" layer="91" grouprefs="PROCESSING">16 MHz Oscillator</text>
-<text x="78.74" y="177.8" size="1.778" layer="91" grouprefs="POWER-5V-REGULATED">Regulated 5V</text>
-<text x="96.52" y="124.46" size="1.778" layer="91" rot="R90" grouprefs="POWER-5V-REGULATED">0 - 500k Feedback Trimmer</text>
+<text x="157.48" y="172.72" size="1.778" layer="91" grouprefs="POWER-5V-REGULATED">Regulated 5V</text>
+<text x="175.26" y="119.38" size="1.778" layer="91" rot="R90" grouprefs="POWER-5V-REGULATED">0 - 500k Feedback Trimmer</text>
 <text x="10.16" y="-73.66" size="1.778" layer="91" grouprefs="PROGRAMMING-IO">Programming Port</text>
 <text x="109.22" y="-73.66" size="1.778" layer="91" grouprefs="MAGNETOMETER-IO">Magnetic Sensing Connections</text>
-<text x="154.94" y="119.38" size="1.778" layer="91">Used solely as reference.
-JP2 is used in place.</text>
 <text x="236.22" y="25.4" size="1.778" layer="91" rot="R180" grouprefs="VIBRATING-MOTOR">Flyback Diode for
 Inductive Load</text>
 <text x="195.58" y="12.7" size="1.778" layer="91" grouprefs="VIBRATING-MOTOR">Test/Replacement Resistor</text>
@@ -11085,63 +11085,63 @@ Limit of 3.5mA each.</text>
 <attribute name="NAME" x="43.18" y="74.422" size="1.778" layer="95"/>
 <attribute name="VALUE" x="43.18" y="7.62" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="30.48" y="144.78" smashed="yes" rot="R270" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="26.67" y="146.2786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="21.59" y="141.478" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="109.22" y="139.7" smashed="yes" rot="R270" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="105.41" y="141.1986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="100.33" y="136.398" size="1.778" layer="96"/>
 </instance>
-<instance part="C1" gate="G$1" x="30.48" y="116.84" smashed="yes" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="23.876" y="117.475" size="1.778" layer="95"/>
-<attribute name="VALUE" x="21.336" y="112.649" size="1.778" layer="96"/>
+<instance part="C1" gate="G$1" x="109.22" y="111.76" smashed="yes" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="102.616" y="112.395" size="1.778" layer="95"/>
+<attribute name="VALUE" x="100.076" y="107.569" size="1.778" layer="96"/>
 </instance>
-<instance part="Q1" gate="G$1" x="68.58" y="132.08" smashed="yes" rot="MR0" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="62.23" y="138.43" size="1.778" layer="95" rot="MR0" align="center-left"/>
-<attribute name="VALUE" x="52.07" y="143.51" size="1.778" layer="96" rot="MR270" align="center-left"/>
+<instance part="Q1" gate="G$1" x="147.32" y="127" smashed="yes" rot="MR0" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="140.97" y="133.35" size="1.778" layer="95" rot="MR0" align="center-left"/>
+<attribute name="VALUE" x="130.81" y="138.43" size="1.778" layer="96" rot="MR270" align="center-left"/>
 </instance>
-<instance part="Q2" gate="G$1" x="58.42" y="147.32" smashed="yes" rot="R90" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="67.31" y="161.29" size="1.778" layer="95" rot="R180" align="center-left"/>
-<attribute name="VALUE" x="67.31" y="163.83" size="1.778" layer="96" rot="R180" align="center-left"/>
+<instance part="Q2" gate="G$1" x="137.16" y="142.24" smashed="yes" rot="R90" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="146.05" y="156.21" size="1.778" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="146.05" y="158.75" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
-<instance part="Q3" gate="G$1" x="58.42" y="167.64" smashed="yes" rot="R90" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="67.31" y="181.61" size="1.778" layer="95" rot="R180" align="center-left"/>
-<attribute name="VALUE" x="67.31" y="184.15" size="1.778" layer="96" rot="R180" align="center-left"/>
+<instance part="Q3" gate="G$1" x="137.16" y="162.56" smashed="yes" rot="R90" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="146.05" y="176.53" size="1.778" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="146.05" y="179.07" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
-<instance part="3.7V-LIPO-1" gate="G$1" x="-10.16" y="142.24" smashed="yes" rot="R180" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="-7.62" y="138.938" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-7.62" y="149.606" size="1.778" layer="96" rot="R180"/>
+<instance part="3.7V-LIPO-1" gate="G$1" x="68.58" y="137.16" smashed="yes" rot="R180" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="71.12" y="133.858" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="71.12" y="144.526" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SPST-SLIDE-SWITCH" gate="G$1" x="2.54" y="157.48" smashed="yes" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="3.81" y="165.1" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="3.81" y="162.56" size="1.778" layer="96" align="center-left"/>
+<instance part="SPST-SLIDE-SWITCH" gate="G$1" x="81.28" y="152.4" smashed="yes" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="82.55" y="160.02" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="82.55" y="157.48" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="3.7V-LIPO-2" gate="G$1" x="-10.16" y="127" smashed="yes" rot="R180" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="-7.62" y="123.698" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-7.62" y="134.366" size="1.778" layer="96" rot="R180"/>
+<instance part="3.7V-LIPO-2" gate="G$1" x="68.58" y="121.92" smashed="yes" rot="R180" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="71.12" y="118.618" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="71.12" y="129.286" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="Z1" gate="G$1" x="58.42" y="121.92" smashed="yes" rot="R270" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="53.34" y="115.57" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="62.23" y="109.22" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="Z1" gate="G$1" x="137.16" y="116.84" smashed="yes" rot="R270" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="132.08" y="110.49" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="140.97" y="104.14" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="Q4" gate="G$1" x="58.42" y="187.96" smashed="yes" rot="R90" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="67.31" y="201.93" size="1.778" layer="95" rot="R180" align="center-left"/>
-<attribute name="VALUE" x="67.31" y="204.47" size="1.778" layer="96" rot="R180" align="center-left"/>
+<instance part="Q4" gate="G$1" x="137.16" y="182.88" smashed="yes" rot="R90" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="146.05" y="196.85" size="1.778" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="146.05" y="199.39" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
-<instance part="R2" gate="G$1" x="40.64" y="152.4" smashed="yes" rot="R270" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="41.91" y="153.8986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="41.91" y="149.098" size="1.778" layer="96"/>
+<instance part="R2" gate="G$1" x="119.38" y="147.32" smashed="yes" rot="R270" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="120.65" y="148.8186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="120.65" y="144.018" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="G$1" x="86.36" y="114.3" smashed="yes" rot="R270" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="80.01" y="115.7986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="80.01" y="110.998" size="1.778" layer="96"/>
+<instance part="R3" gate="G$1" x="165.1" y="109.22" smashed="yes" rot="R270" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="158.75" y="110.7186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="158.75" y="105.918" size="1.778" layer="96"/>
 </instance>
-<instance part="VR1" gate="G$1" x="86.36" y="152.4" smashed="yes" rot="R270" grouprefs="POWER-5V-REGULATED">
-<attribute name="NAME" x="78.74" y="146.05" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="91.44" y="146.05" size="1.778" layer="96" rot="R270" align="center-left"/>
+<instance part="VR1" gate="G$1" x="165.1" y="147.32" smashed="yes" rot="R270" grouprefs="POWER-5V-REGULATED">
+<attribute name="NAME" x="157.48" y="140.97" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="170.18" y="140.97" size="1.778" layer="96" rot="R270" align="center-left"/>
 </instance>
-<instance part="P+1" gate="VCC" x="88.9" y="172.72" smashed="yes" grouprefs="POWER-5V-REGULATED">
-<attribute name="VALUE" x="86.36" y="170.18" size="1.778" layer="96" rot="R90"/>
+<instance part="P+1" gate="VCC" x="167.64" y="167.64" smashed="yes" grouprefs="POWER-5V-REGULATED">
+<attribute name="VALUE" x="165.1" y="165.1" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND1" gate="1" x="2.54" y="96.52" smashed="yes" grouprefs="POWER-5V-REGULATED">
-<attribute name="VALUE" x="0" y="93.98" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="81.28" y="91.44" smashed="yes" grouprefs="POWER-5V-REGULATED">
+<attribute name="VALUE" x="78.74" y="88.9" size="1.778" layer="96"/>
 </instance>
 <instance part="GND2" gate="1" x="17.78" y="22.86" smashed="yes" grouprefs="PROCESSING">
 <attribute name="VALUE" x="15.24" y="20.32" size="1.778" layer="96"/>
@@ -11283,6 +11283,13 @@ Limit of 3.5mA each.</text>
 <attribute name="NAME" x="199.39" y="85.3186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="199.39" y="80.518" size="1.778" layer="96"/>
 </instance>
+<instance part="C6" gate="G$1" x="30.48" y="60.96" smashed="yes">
+<attribute name="NAME" x="34.925" y="59.436" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="27.051" y="56.896" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND3" gate="1" x="30.48" y="53.34" smashed="yes">
+<attribute name="VALUE" x="27.94" y="50.8" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11290,28 +11297,30 @@ Limit of 3.5mA each.</text>
 <net name="VCC" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="E"/>
-<wire x1="66.04" y1="157.48" x2="71.12" y2="157.48" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="144.78" y1="152.4" x2="149.86" y2="152.4" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="VR1" gate="G$1" pin="WIPER"/>
-<wire x1="71.12" y1="157.48" x2="83.82" y2="157.48" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="83.82" y1="157.48" x2="88.9" y2="157.48" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="83.82" y1="152.4" x2="83.82" y2="157.48" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="83.82" y="157.48" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="149.86" y1="152.4" x2="162.56" y2="152.4" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="162.56" y1="152.4" x2="167.64" y2="152.4" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="162.56" y1="147.32" x2="162.56" y2="152.4" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="162.56" y="152.4" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q4" gate="G$1" pin="E"/>
-<wire x1="66.04" y1="198.12" x2="71.12" y2="198.12" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="71.12" y1="198.12" x2="71.12" y2="177.8" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="71.12" y="157.48" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="144.78" y1="193.04" x2="149.86" y2="193.04" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="149.86" y1="193.04" x2="149.86" y2="172.72" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="149.86" y="152.4" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q3" gate="G$1" pin="E"/>
-<wire x1="71.12" y1="177.8" x2="71.12" y2="157.48" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="66.04" y1="177.8" x2="71.12" y2="177.8" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="88.9" y1="157.48" x2="88.9" y2="170.18" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="149.86" y1="172.72" x2="149.86" y2="152.4" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="144.78" y1="172.72" x2="149.86" y2="172.72" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="167.64" y1="152.4" x2="167.64" y2="165.1" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<junction x="71.12" y="177.8"/>
+<junction x="149.86" y="172.72" grouprefs="POWER-5V-REGULATED"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="30.48" y1="66.04" x2="30.48" y2="63.5" width="0.1524" layer="91" grouprefs="PROCESSING"/>
 <pinref part="U1" gate="G$1" pin="VCC"/>
 <wire x1="30.48" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91" grouprefs="PROCESSING"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<junction x="30.48" y="63.5"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
@@ -11353,79 +11362,79 @@ Limit of 3.5mA each.</text>
 </net>
 <net name="BATT-SERIES" class="0">
 <segment>
-<wire x1="2.54" y1="129.54" x2="2.54" y2="142.24" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<label x="5.08" y="134.62" size="1.778" layer="95" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="81.28" y1="124.46" x2="81.28" y2="137.16" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<label x="83.82" y="129.54" size="1.778" layer="95" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="3.7V-LIPO-1" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="142.24" x2="2.54" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="137.16" x2="81.28" y2="137.16" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="3.7V-LIPO-2" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="129.54" x2="2.54" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="124.46" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FEEDBACK" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="VR1" gate="G$1" pin="CW"/>
-<wire x1="86.36" y1="119.38" x2="86.36" y2="121.92" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="86.36" y1="121.92" x2="86.36" y2="124.46" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="68.58" y1="121.92" x2="86.36" y2="121.92" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="86.36" y="121.92" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="165.1" y1="114.3" x2="165.1" y2="116.84" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="165.1" y1="116.84" x2="165.1" y2="119.38" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="147.32" y1="116.84" x2="165.1" y2="116.84" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="165.1" y="116.84" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q1" gate="G$1" pin="B"/>
-<wire x1="68.58" y1="121.92" x2="68.58" y2="132.08" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<label x="71.12" y="121.92" size="1.778" layer="95" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="147.32" y1="116.84" x2="147.32" y2="127" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<label x="149.86" y="116.84" size="1.778" layer="95" grouprefs="POWER-5V-REGULATED"/>
 </segment>
 </net>
 <net name="BJT-C" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="149.86" x2="30.48" y2="157.48" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="109.22" y1="144.78" x2="109.22" y2="152.4" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="SPST-SLIDE-SWITCH" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="157.48" x2="22.86" y2="157.48" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="109.22" y1="152.4" x2="101.6" y2="152.4" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="157.48" x2="40.64" y2="157.48" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="30.48" y="157.48" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="109.22" y1="152.4" x2="119.38" y2="152.4" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="109.22" y="152.4" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q2" gate="G$1" pin="C"/>
-<wire x1="40.64" y1="157.48" x2="45.72" y2="157.48" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="40.64" y="157.48" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="45.72" y1="157.48" x2="50.8" y2="157.48" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="45.72" y1="157.48" x2="45.72" y2="177.8" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="45.72" y="157.48" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="119.38" y1="152.4" x2="124.46" y2="152.4" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="119.38" y="152.4" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="124.46" y1="152.4" x2="129.54" y2="152.4" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="124.46" y1="152.4" x2="124.46" y2="172.72" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="124.46" y="152.4" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q4" gate="G$1" pin="C"/>
-<wire x1="45.72" y1="177.8" x2="45.72" y2="198.12" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="45.72" y1="198.12" x2="50.8" y2="198.12" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="124.46" y1="172.72" x2="124.46" y2="193.04" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="124.46" y1="193.04" x2="129.54" y2="193.04" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q3" gate="G$1" pin="C"/>
-<wire x1="50.8" y1="177.8" x2="45.72" y2="177.8" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="45.72" y="177.8" grouprefs="POWER-5V-REGULATED"/>
-<label x="33.02" y="157.48" size="1.778" layer="95" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="129.54" y1="172.72" x2="124.46" y2="172.72" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="124.46" y="172.72" grouprefs="POWER-5V-REGULATED"/>
+<label x="111.76" y="152.4" size="1.778" layer="95" grouprefs="POWER-5V-REGULATED"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="147.32" x2="40.64" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="40.64" y1="144.78" x2="48.26" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="119.38" y1="142.24" x2="119.38" y2="139.7" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="119.38" y1="139.7" x2="127" y2="139.7" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q2" gate="G$1" pin="B"/>
-<wire x1="48.26" y1="144.78" x2="58.42" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="58.42" y1="144.78" x2="58.42" y2="147.32" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="58.42" y="144.78" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="127" y1="139.7" x2="137.16" y2="139.7" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="137.16" y1="139.7" x2="137.16" y2="142.24" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="137.16" y="139.7" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q1" gate="G$1" pin="C"/>
-<wire x1="58.42" y1="139.7" x2="58.42" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="137.16" y1="134.62" x2="137.16" y2="139.7" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q4" gate="G$1" pin="B"/>
-<wire x1="48.26" y1="144.78" x2="48.26" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="167.64" x2="48.26" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="187.96" x2="58.42" y2="187.96" width="0.1524" layer="91"/>
-<junction x="48.26" y="144.78"/>
+<wire x1="127" y1="139.7" x2="127" y2="162.56" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="127" y1="162.56" x2="127" y2="182.88" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="127" y1="182.88" x2="137.16" y2="182.88" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="127" y="139.7" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q3" gate="G$1" pin="B"/>
-<wire x1="48.26" y1="167.64" x2="58.42" y2="167.64" width="0.1524" layer="91"/>
-<junction x="48.26" y="167.64"/>
+<wire x1="127" y1="162.56" x2="137.16" y2="162.56" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="127" y="162.56" grouprefs="POWER-5V-REGULATED"/>
 </segment>
 </net>
 <net name="+V-SUPPLY" class="0">
 <segment>
 <pinref part="SPST-SLIDE-SWITCH" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="157.48" x2="2.54" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<label x="5.08" y="149.86" size="1.778" layer="95" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="81.28" y1="152.4" x2="81.28" y2="139.7" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<label x="83.82" y="144.78" size="1.778" layer="95" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="3.7V-LIPO-1" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="144.78" x2="2.54" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="139.7" x2="81.28" y2="139.7" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 </segment>
 </net>
 <net name="ZENER-V" class="0">
@@ -11433,34 +11442,34 @@ Limit of 3.5mA each.</text>
 <pinref part="Z1" gate="G$1" pin="K"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="119.38" x2="30.48" y2="121.92" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="30.48" y1="121.92" x2="30.48" y2="139.7" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="58.42" y1="121.92" x2="30.48" y2="121.92" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="58.42" y="121.92" grouprefs="POWER-5V-REGULATED"/>
-<junction x="30.48" y="121.92" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="109.22" y1="114.3" x2="109.22" y2="116.84" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="109.22" y1="116.84" x2="109.22" y2="134.62" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="137.16" y1="116.84" x2="109.22" y2="116.84" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="137.16" y="116.84" grouprefs="POWER-5V-REGULATED"/>
+<junction x="109.22" y="116.84" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q1" gate="G$1" pin="E"/>
-<wire x1="58.42" y1="121.92" x2="58.42" y2="124.46" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<label x="38.1" y="121.92" size="1.778" layer="95" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="137.16" y1="116.84" x2="137.16" y2="119.38" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<label x="116.84" y="116.84" size="1.778" layer="95" grouprefs="POWER-5V-REGULATED"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="2.54" y1="127" x2="2.54" y2="106.68" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="81.28" y1="121.92" x2="81.28" y2="101.6" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="Z1" gate="G$1" pin="A"/>
-<wire x1="2.54" y1="106.68" x2="2.54" y2="99.06" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="86.36" y1="109.22" x2="86.36" y2="106.68" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="86.36" y1="106.68" x2="58.42" y2="106.68" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="81.28" y1="101.6" x2="81.28" y2="93.98" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="165.1" y1="104.14" x2="165.1" y2="101.6" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="165.1" y1="101.6" x2="137.16" y2="101.6" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="106.68" x2="30.48" y2="106.68" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="30.48" y1="106.68" x2="30.48" y2="111.76" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="58.42" y="106.68" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="30.48" y1="106.68" x2="2.54" y2="106.68" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="30.48" y="106.68" grouprefs="POWER-5V-REGULATED"/>
-<junction x="2.54" y="106.68" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="137.16" y1="101.6" x2="109.22" y2="101.6" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="109.22" y1="101.6" x2="109.22" y2="106.68" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="137.16" y="101.6" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="109.22" y1="101.6" x2="81.28" y2="101.6" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<junction x="109.22" y="101.6" grouprefs="POWER-5V-REGULATED"/>
+<junction x="81.28" y="101.6" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="3.7V-LIPO-2" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="127" x2="2.54" y2="127" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -11507,6 +11516,10 @@ Limit of 3.5mA each.</text>
 <wire x1="269.24" y1="-76.2" x2="269.24" y2="-78.74" width="0.1524" layer="91" grouprefs="USER-BUTTON"/>
 <junction x="269.24" y="-76.2" grouprefs="USER-BUTTON"/>
 <pinref part="GND7" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="SDA" class="0">

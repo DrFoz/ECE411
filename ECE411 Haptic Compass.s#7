@@ -8299,6 +8299,32 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-2.275" y1="0.8" x2="1.338" y2="0.8" width="0.2" layer="21"/>
 <wire x1="-1.338" y1="-0.8" x2="1.338" y2="-0.8" width="0.2" layer="21"/>
 </package>
+<package name="SOT95P275X110-6N">
+<description>&lt;b&gt;SOT457 (SC-74)&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.25" y="0.95" dx="1.25" dy="0.5" layer="1"/>
+<smd name="2" x="-1.25" y="0" dx="1.25" dy="0.5" layer="1"/>
+<smd name="3" x="-1.25" y="-0.95" dx="1.25" dy="0.5" layer="1"/>
+<smd name="4" x="1.25" y="-0.95" dx="1.25" dy="0.5" layer="1"/>
+<smd name="5" x="1.25" y="0" dx="1.25" dy="0.5" layer="1"/>
+<smd name="6" x="1.25" y="0.95" dx="1.25" dy="0.5" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.125" y1="1.8" x2="2.125" y2="1.8" width="0.05" layer="51"/>
+<wire x1="2.125" y1="1.8" x2="2.125" y2="-1.8" width="0.05" layer="51"/>
+<wire x1="2.125" y1="-1.8" x2="-2.125" y2="-1.8" width="0.05" layer="51"/>
+<wire x1="-2.125" y1="-1.8" x2="-2.125" y2="1.8" width="0.05" layer="51"/>
+<wire x1="-0.75" y1="1.45" x2="0.75" y2="1.45" width="0.1" layer="51"/>
+<wire x1="0.75" y1="1.45" x2="0.75" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="0.75" y1="-1.45" x2="-0.75" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="-0.75" y1="-1.45" x2="-0.75" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.75" y1="0.5" x2="0.2" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.275" y1="1.45" x2="0.275" y2="1.45" width="0.2" layer="21"/>
+<wire x1="0.275" y1="1.45" x2="0.275" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="0.275" y1="-1.45" x2="-0.275" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="-0.275" y1="-1.45" x2="-0.275" y2="1.45" width="0.2" layer="21"/>
+<wire x1="-1.875" y1="1.55" x2="-0.625" y2="1.55" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PBHV8115TLHR">
@@ -8374,6 +8400,20 @@ Source: AVX .. aphvc.pdf</description>
 <text x="11.43" y="2.54" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 <pin name="K" x="0" y="0" visible="pad" length="middle"/>
 <pin name="A" x="15.24" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+<symbol name="74HC2G14GV-Q100H">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1A" x="0" y="0" length="middle"/>
+<pin name="GND" x="0" y="-2.54" length="middle"/>
+<pin name="2A" x="0" y="-5.08" length="middle"/>
+<pin name="1Y" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="VCC" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="2Y" x="25.4" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8526,6 +8566,35 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/BAS21GWX.pdf"
 <attribute name="MANUFACTURER_PART_NUMBER" value="BAS21GWX" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="841-BAS21GWX" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=841-BAS21GWX" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74HC2G14GV-Q100H" prefix="IC">
+<description>&lt;b&gt;74HC(T)2G14-Q100 - Dual inverting Schmitt trigger@en-us&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/74HC2G14GV-Q100H.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="74HC2G14GV-Q100H" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P275X110-6N">
+<connects>
+<connect gate="G$1" pin="1A" pad="1"/>
+<connect gate="G$1" pin="1Y" pad="6"/>
+<connect gate="G$1" pin="2A" pad="3"/>
+<connect gate="G$1" pin="2Y" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="74HC(T)2G14-Q100 - Dual inverting Schmitt trigger@en-us" constant="no"/>
+<attribute name="HEIGHT" value="1.1mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Nexperia" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="74HC2G14GV-Q100H" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="771-74HC2G14GVQ100H" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=771-74HC2G14GVQ100H" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9055,6 +9124,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/BAS21GWX.pdf"
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
 <part name="D1" library="SamacSys_Parts" deviceset="BAS21GWX" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
+<part name="IC1" library="SamacSys_Parts" deviceset="74HC2G14GV-Q100H" device=""/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9066,8 +9139,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/BAS21GWX.pdf"
 <text x="109.22" y="-73.66" size="1.778" layer="91" grouprefs="MAGNETOMETER-IO">Magnetic Sensing Connections</text>
 <text x="154.94" y="119.38" size="1.778" layer="91">Used solely as reference.
 JP2 is used in place.</text>
-<text x="175.26" y="17.78" size="1.778" layer="91" rot="R180" grouprefs="VIBRATING-MOTOR">Flyback Diode for
+<text x="251.46" y="22.86" size="1.778" layer="91" rot="R180" grouprefs="VIBRATING-MOTOR">Flyback Diode for
 Inductive Load</text>
+<text x="210.82" y="-5.08" size="1.778" layer="91">Test/Replacement Resistor</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="60.96" y="45.72" smashed="yes" grouprefs="PROCESSING">
@@ -9165,9 +9239,9 @@ Inductive Load</text>
 <attribute name="NAME" x="132.715" y="-62.23" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="114.3" y="-62.23" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="JP3" gate="G$1" x="210.82" y="-5.08" smashed="yes" grouprefs="VIBRATING-MOTOR">
-<attribute name="NAME" x="204.47" y="0.635" size="1.778" layer="95"/>
-<attribute name="VALUE" x="204.47" y="-10.16" size="1.778" layer="96"/>
+<instance part="JP3" gate="G$1" x="271.78" y="-7.62" smashed="yes" grouprefs="VIBRATING-MOTOR">
+<attribute name="NAME" x="265.43" y="-1.905" size="1.778" layer="95"/>
+<attribute name="VALUE" x="265.43" y="-12.7" size="1.778" layer="96"/>
 </instance>
 <instance part="GND4" gate="1" x="30.48" y="-63.5" smashed="yes" grouprefs="PROGRAMMING-IO">
 <attribute name="VALUE" x="27.94" y="-66.04" size="1.778" layer="96"/>
@@ -9209,12 +9283,26 @@ Inductive Load</text>
 <attribute name="NAME" x="-11.43" y="-28.9814" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-11.43" y="-33.782" size="1.778" layer="96"/>
 </instance>
-<instance part="D1" gate="G$1" x="180.34" y="15.24" smashed="yes" rot="R270" grouprefs="VIBRATING-MOTOR">
-<attribute name="NAME" x="175.26" y="3.81" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="185.42" y="13.97" size="1.778" layer="96" rot="R270" align="center-left"/>
+<instance part="D1" gate="G$1" x="241.3" y="12.7" smashed="yes" rot="R270" grouprefs="VIBRATING-MOTOR">
+<attribute name="NAME" x="236.22" y="1.27" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="246.38" y="11.43" size="1.778" layer="96" rot="R270" align="center-left"/>
 </instance>
-<instance part="P+6" gate="VCC" x="198.12" y="30.48" smashed="yes" grouprefs="VIBRATING-MOTOR">
-<attribute name="VALUE" x="195.58" y="27.94" size="1.778" layer="96" rot="R90"/>
+<instance part="P+6" gate="VCC" x="259.08" y="27.94" smashed="yes" grouprefs="VIBRATING-MOTOR">
+<attribute name="VALUE" x="256.54" y="25.4" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R10" gate="G$1" x="210.82" y="5.08" smashed="yes" rot="R270" grouprefs="VIBRATING-MOTOR">
+<attribute name="NAME" x="204.47" y="6.5786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="207.01" y="1.778" size="1.778" layer="96"/>
+</instance>
+<instance part="IC1" gate="G$1" x="213.36" y="-40.64" smashed="yes">
+<attribute name="NAME" x="234.95" y="-33.02" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="234.95" y="-35.56" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="GND6" gate="1" x="205.74" y="-53.34" smashed="yes">
+<attribute name="VALUE" x="203.2" y="-55.88" size="1.778" layer="96"/>
+</instance>
+<instance part="P+7" gate="VCC" x="246.38" y="-30.48" smashed="yes">
+<attribute name="VALUE" x="254" y="-30.48" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -9238,6 +9326,7 @@ Inductive Load</text>
 <wire x1="66.04" y1="177.8" x2="71.12" y2="177.8" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <wire x1="88.9" y1="157.48" x2="88.9" y2="170.18" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
+<junction x="71.12" y="177.8"/>
 </segment>
 <segment>
 <pinref part="MAGNETOMETER" gate="G$1" pin="VCC"/>
@@ -9258,14 +9347,25 @@ Inductive Load</text>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="K"/>
-<wire x1="180.34" y1="15.24" x2="180.34" y2="20.32" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
-<wire x1="180.34" y1="20.32" x2="198.12" y2="20.32" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
-<wire x1="198.12" y1="20.32" x2="198.12" y2="-2.54" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
+<wire x1="241.3" y1="12.7" x2="241.3" y2="17.78" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
+<wire x1="241.3" y1="17.78" x2="259.08" y2="17.78" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
+<wire x1="259.08" y1="17.78" x2="259.08" y2="-5.08" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="-2.54" x2="208.28" y2="-2.54" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
-<wire x1="198.12" y1="20.32" x2="198.12" y2="27.94" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
-<junction x="198.12" y="20.32" grouprefs="VIBRATING-MOTOR"/>
+<wire x1="259.08" y1="-5.08" x2="269.24" y2="-5.08" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
+<wire x1="259.08" y1="17.78" x2="259.08" y2="25.4" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
+<junction x="259.08" y="17.78" grouprefs="VIBRATING-MOTOR"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<pinref part="JP2" gate="A" pin="2"/>
+<wire x1="127" y1="-55.88" x2="127" y2="-66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="VCC"/>
+<wire x1="238.76" y1="-43.18" x2="246.38" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-43.18" x2="246.38" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="BATT-SERIES" class="0">
@@ -9319,17 +9419,21 @@ Inductive Load</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="147.32" x2="40.64" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<wire x1="40.64" y1="144.78" x2="58.42" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<wire x1="40.64" y1="144.78" x2="48.26" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q2" gate="G$1" pin="B"/>
+<wire x1="48.26" y1="144.78" x2="58.42" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <wire x1="58.42" y1="144.78" x2="58.42" y2="147.32" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
 <junction x="58.42" y="144.78" grouprefs="POWER-5V-REGULATED"/>
-<pinref part="Q3" gate="G$1" pin="B"/>
-<wire x1="58.42" y1="167.64" x2="58.42" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<pinref part="Q4" gate="G$1" pin="B"/>
-<wire x1="58.42" y1="187.96" x2="58.42" y2="167.64" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
-<junction x="58.42" y="167.64" grouprefs="POWER-5V-REGULATED"/>
 <pinref part="Q1" gate="G$1" pin="C"/>
 <wire x1="58.42" y1="139.7" x2="58.42" y2="144.78" width="0.1524" layer="91" grouprefs="POWER-5V-REGULATED"/>
+<pinref part="Q4" gate="G$1" pin="B"/>
+<wire x1="48.26" y1="144.78" x2="48.26" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="167.64" x2="48.26" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="187.96" x2="58.42" y2="187.96" width="0.1524" layer="91"/>
+<junction x="48.26" y="144.78"/>
+<pinref part="Q3" gate="G$1" pin="B"/>
+<wire x1="48.26" y1="167.64" x2="58.42" y2="167.64" width="0.1524" layer="91"/>
+<junction x="48.26" y="167.64"/>
 </segment>
 </net>
 <net name="+V-SUPPLY" class="0">
@@ -9409,6 +9513,12 @@ Inductive Load</text>
 <wire x1="139.7" y1="-58.42" x2="139.7" y2="-60.96" width="0.1524" layer="91" grouprefs="MAGNETOMETER-IO"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<wire x1="213.36" y1="-43.18" x2="205.74" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-43.18" x2="205.74" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -9473,13 +9583,6 @@ Inductive Load</text>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="40.64" x2="2.54" y2="38.1" width="0.1524" layer="91" grouprefs="PROCESSING"/>
 <junction x="2.54" y="40.64" grouprefs="PROCESSING"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="JP2" gate="A" pin="2"/>
-<wire x1="127" y1="-66.04" x2="127" y2="-55.88" width="0.1524" layer="91" grouprefs="MAGNETOMETER-IO"/>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -9577,15 +9680,23 @@ Inductive Load</text>
 <net name="PULLDOWN-VIBRATOR" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB1(OC1A)"/>
-<wire x1="86.36" y1="22.86" x2="149.86" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="22.86" x2="149.86" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="22.86" x2="210.82" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="22.86" x2="210.82" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<label x="162.56" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="JP3-NEG" class="0">
+<segment>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="-5.08" x2="180.34" y2="-5.08" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
+<wire x1="241.3" y1="-7.62" x2="269.24" y2="-7.62" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="180.34" y1="-5.08" x2="208.28" y2="-5.08" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
-<wire x1="180.34" y1="0" x2="180.34" y2="-5.08" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
-<junction x="180.34" y="-5.08" grouprefs="VIBRATING-MOTOR"/>
-<label x="152.4" y="-5.08" size="1.778" layer="95"/>
+<wire x1="241.3" y1="-2.54" x2="241.3" y2="-7.62" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
+<junction x="241.3" y="-7.62" grouprefs="VIBRATING-MOTOR"/>
+<wire x1="210.82" y1="-7.62" x2="241.3" y2="-7.62" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
+<wire x1="210.82" y1="0" x2="210.82" y2="-7.62" width="0.1524" layer="91" grouprefs="VIBRATING-MOTOR"/>
+<label x="210.82" y="-10.16" size="1.778" layer="95" grouprefs="VIBRATING-MOTOR"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

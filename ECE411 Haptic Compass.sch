@@ -11863,6 +11863,16 @@ Limit of 3.5mA each.</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,16.7361,-66.2771,JP1,,,,,"/>
+<approved hash="113,1,125.956,-66.2771,JP2,,,,,"/>
+<approved hash="113,1,254.237,-2.31394,JP3,,,,,"/>
+<approved hash="113,1,266.937,-63.2739,JP4,,,,,"/>
+<approved hash="113,1,196.85,73.3383,LED-N,,,,,"/>
+<approved hash="113,1,196.85,65.7183,LED-S,,,,,"/>
+<approved hash="113,1,196.85,58.0983,LED-E,,,,,"/>
+<approved hash="113,1,196.85,50.4783,LED-W,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

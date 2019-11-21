@@ -158,10 +158,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="63.48" y2="0.127" width="0" layer="20"/>
-<wire x1="63.48" y1="0.127" x2="63.48" y2="63.551" width="0" layer="20"/>
-<wire x1="63.48" y1="63.551" x2="0" y2="63.424" width="0" layer="20"/>
-<wire x1="0" y1="63.424" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="63.5054" y2="0.1016" width="0" layer="20"/>
+<wire x1="63.5054" y1="0.1016" x2="63.5054" y2="63.5256" width="0" layer="20"/>
+<wire x1="63.5054" y1="63.5256" x2="0" y2="63.5002" width="0" layer="20"/>
+<wire x1="0" y1="63.5002" x2="0" y2="0" width="0" layer="20"/>
 <hole x="57.15" y="57.15" drill="6.35"/>
 <hole x="5.842" y="6.35" drill="6.35"/>
 <text x="15.494" y="36.322" size="1.016" layer="25" font="vector" align="bottom-right">Reset
@@ -188,6 +188,22 @@ Nov. 20, 2019</text>
 <wire x1="42.164" y1="32.766" x2="42.164" y2="32.258" width="0.1524" layer="25"/>
 <wire x1="42.164" y1="32.258" x2="41.656" y2="32.766" width="0.1524" layer="25"/>
 <text x="27.178" y="61.214" size="1.016" layer="25" font="vector">Magnetometer</text>
+<wire x1="37.592" y1="30.226" x2="37.084" y2="30.226" width="0.1524" layer="21"/>
+<wire x1="37.084" y1="30.226" x2="36.576" y2="30.226" width="0.1524" layer="21"/>
+<wire x1="36.576" y1="30.226" x2="37.084" y2="29.718" width="0.1524" layer="21"/>
+<wire x1="37.084" y1="29.718" x2="37.592" y2="30.226" width="0.1524" layer="21"/>
+<wire x1="36.576" y1="29.718" x2="37.084" y2="29.718" width="0.1524" layer="21"/>
+<wire x1="37.084" y1="29.718" x2="37.592" y2="29.718" width="0.1524" layer="21"/>
+<wire x1="37.084" y1="29.718" x2="37.084" y2="29.21" width="0.1524" layer="21"/>
+<wire x1="37.084" y1="30.226" x2="37.084" y2="30.734" width="0.1524" layer="21"/>
+<wire x1="17.272" y1="8.128" x2="17.78" y2="8.128" width="0.1524" layer="21"/>
+<wire x1="17.78" y1="8.128" x2="18.288" y2="8.128" width="0.1524" layer="21"/>
+<wire x1="18.288" y1="8.128" x2="17.78" y2="8.636" width="0.1524" layer="21"/>
+<wire x1="17.78" y1="8.636" x2="17.272" y2="8.128" width="0.1524" layer="21"/>
+<wire x1="18.288" y1="8.636" x2="17.78" y2="8.636" width="0.1524" layer="21"/>
+<wire x1="17.78" y1="8.636" x2="17.272" y2="8.636" width="0.1524" layer="21"/>
+<wire x1="17.78" y1="8.636" x2="17.78" y2="9.144" width="0.1524" layer="21"/>
+<wire x1="17.78" y1="8.128" x2="17.78" y2="7.62" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="S2B-PH-K-S_LF__SN_">
@@ -1892,7 +1908,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MANUFACTURER_PART_NUMBER" value="BAS21GWX" x="-48.26" y="-24.638" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="841-BAS21GWX" x="-48.26" y="-24.638" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=841-BAS21GWX" x="-48.26" y="-24.638" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="17.272" y="8.382" size="1.27" layer="25" font="vector" align="center"/>
+<attribute name="NAME" x="17.526" y="6.604" size="1.27" layer="25" font="vector" align="center"/>
 </element>
 <element name="D2" library="SamacSys_Parts" package="SOD3616X130N" value="BAS21GWX" x="39.37" y="29.972" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="Diodes - General Purpose, Power, Switching High-voltage switching diode - 3k Reel" x="107.95" y="74.422" size="1.778" layer="27" rot="R90" display="off"/>

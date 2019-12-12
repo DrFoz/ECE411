@@ -5,7 +5,7 @@ int northLED = 5;
 int southLED = 6;
 int eastLED = 7;
 int westLED = 8;
-//boolean currentButton = LOW;
+boolean currentButton = LOW;
 int modeSelect = 2;
 volatile byte directionSet = 0; //variable to inticate direction selected
 
@@ -386,11 +386,15 @@ void loop()
 void changeDirection() {
   
   Serial.println("selecting new mode");
+  static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  if(interrupt_time - last_interrupt_time > 800)
+  {
   if(directionSet < 3)
         directionSet = directionSet +1;
         else
         directionSet = 0;
-        
+  }     
   
   //detachInterrupt(digitalPinToInterrupt(modeSelect));
   //attachInterrupt(digitalPinToInterrupt(modeSelect), changeDirection, CHANGE);
